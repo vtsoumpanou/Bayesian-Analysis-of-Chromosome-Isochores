@@ -103,10 +103,10 @@ where:
 
 Base R only (no additional packages required for these scripts). The following base functions are used:
 
-- lbeta() for log Beta functions
-- cumsum() for cumulative sums
-- rbeta() for Beta sampling
-- sample() for discrete sampling
+- `lbeta()` — Log Beta function for numerically stable marginal likelihood
+- `cumsum()` — Cumulative sums for changepoint calculations
+- `rbeta()` — Beta distribution sampling for p1 and p2
+- `sample()` — Discrete uniform sampling for changepoint t
 
 ## Model Specifications
 
