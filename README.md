@@ -24,9 +24,9 @@ This project analyzes CG base counts across five chromosome segments (chr1 throu
 
 
 
-\- \*\*Model 1 (M1):\*\* A single isochore with constant CG proportion across all windows
+\- Model 1 (M1): A single isochore with constant CG proportion across all windows
 
-\- \*\*Model 2 (M2):\*\* Two isochores separated by an unknown changepoint t
+\- Model 2 (M2): Two isochores separated by an unknown changepoint t
 
 
 
@@ -88,11 +88,11 @@ Conclusion: Decisive Bayesian evidence supporting two isochores for all five chr
 
 
 
-\### Gibbs Sampling Results (Chromosome 3)
+## Gibbs Sampling Results (Chromosome 3)
 
 
 
-\- Changepoint location (t):\*\* Posterior concentrated around window 13
+\- Changepoint location (t): Posterior concentrated around window 13
 
 \- Interpretation: Lower-GC region (windows 1-13) followed by higher-GC region (windows 14-100)
 
@@ -202,7 +202,7 @@ Gibbs Sampler for Chromosome 3
 
 
 
-\### Install R and RStudio
+Install R and RStudio
 
 
 
@@ -214,7 +214,7 @@ Gibbs Sampler for Chromosome 3
 
 
 
-\### Required Packages
+Required Packages
 
 
 
@@ -369,10 +369,6 @@ bayesian-isochore-analysis/
 ├── Report\_Bayes2\_Tsoumpanou.pdf
 
 ├── README.md
-
-└── .gitignore
-
-
 
 
 
