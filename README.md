@@ -1,19 +1,5 @@
 # Bayesian Analysis of Chromosome Isochores
 
-
-
-Course: Bayesian Inference  
-
-Institution: National and Kapodistrian University of Athens  
-
-Department: Department of Mathematics  
-
-Student: Tsoumpanou Vasiliki  
-
-Fall Semester 2025-2026
-
-
-
 A Bayesian statistical analysis of GC content in chromosomes to detect isochore boundaries using model selection and Gibbs sampling.
 
 ## 
@@ -232,105 +218,12 @@ Base R only (no additional packages required for these scripts). The following b
 
 
 
-## Usage
 
+## Model Specifications
 
 
-\### Clone the repository
 
-
-
-git clone https://github.com/vtsoumpanou/bayesian-isochore-analysis.git
-
-cd bayesian-isochore-analysis
-
-
-
-\### Run Model Selection (All Chromosomes)
-
-
-
-source("Isochore\_analysis.R")
-
-
-
-\# Run model selection for all chromosomes
-
-data <- list(chr1, chr2, chr3, chr4, chr5)
-
-lapply(data, Model\_Selection)
-
-
-
-\# Compute log Bayes factors
-
-lapply(data, log\_BF)
-
-
-
-\# Visualize CG content patterns
-
-lapply(data, plots)
-
-lapply(data, data\_hist)
-
-
-
-\### Run Gibbs Sampler (Chromosome 3 Only)
-
-
-
-source("gibbs\_isochores.R")
-
-
-
-\# Run Gibbs sampler
-
-draws <- gibbs(data = chr3, ndraw = 1000)
-
-
-
-\# Extract parameters
-
-p1 <- draws\[, 1]
-
-p2 <- draws\[, 2]
-
-t <- draws\[, 3]
-
-
-
-\# Trace plots
-
-par(mfrow = c(1, 3))
-
-plot(p1, type = "l", main = "Draws p1")
-
-plot(p2, type = "l", main = "Draws p2")
-
-plot(t, type = "l", main = "Draws t")
-
-
-
-\# Histograms
-
-par(mfrow = c(2, 2))
-
-hist(t, probab = TRUE, main = "Posterior of Changepoint t")
-
-hist(p1, probab = TRUE, main = "Posterior of p1")
-
-hist(p2, probab = TRUE, main = "Posterior of p2")
-
-hist(p1 - p2, probab = TRUE, main = "Posterior of p1 - p2")
-
-
-
-\## Model Specifications
-
-
-
-\### Joint Posterior (up to constant)
+### Joint Posterior (up to constant)
 
 
 
@@ -338,7 +231,7 @@ p(p1, p2, t | x) proportional to Beta(p1 | a1 + S\_t, b1 + n\*t - S\_t) x Beta(p
 
 
 
-\### Conditional Posteriors
+### Conditional Posteriors
 
 
 
@@ -352,23 +245,6 @@ p(p1, p2, t | x) proportional to Beta(p1 | a1 + S\_t, b1 + n\*t - S\_t) x Beta(p
 
 Note: Numerical stability is achieved using log-scale calculations in the implementation.
 
-
-
-## Project Structure
-
-
-
-bayesian-isochore-analysis/
-
-├── Isochore\_analysis.R
-
-├── gibbs\_isochores.R
-
-├── Report\_Bayes1\_Tsoumpanou.pdf
-
-├── Report\_Bayes2\_Tsoumpanou.pdf
-
-├── README.md
 
 
 
