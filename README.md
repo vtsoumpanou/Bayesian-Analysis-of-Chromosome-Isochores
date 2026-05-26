@@ -42,7 +42,7 @@ A Bayesian framework is adopted throughout, using conjugate Beta priors (Jeffrey
 
 | `Report\_Bayes2\_Tsoumpanou.pdf` | Full report: Gibbs sampling analysis for chromosome 3 |
 
-
+## 
 
 ## Key Findings
 
@@ -72,7 +72,7 @@ Model Selection Results (All Chromosomes)
 
 Conclusion: Decisive Bayesian evidence supporting two isochores for all five chromosomes.
 
-
+## 
 
 ## Gibbs Sampling Results (Chromosome 3)
 
@@ -128,7 +128,7 @@ where:
 
 \- theta\_i = underlying CG proportion
 
-
+## 
 
 ## Statistical Methods
 
@@ -183,7 +183,7 @@ Gibbs Sampler for Chromosome 3
 &#x20; 3. Sample t using normalized posterior probabilities (log-scale for stability)
 
 
-
+## 
 ## Requirements
 
 
@@ -218,7 +218,7 @@ Base R only (no additional packages required for these scripts). The following b
 
 
 
-
+## 
 ## Model Specifications
 
 
@@ -247,6 +247,7 @@ Note: Numerical stability is achieved using log-scale calculations in the implem
 
 
 
+##
 
 ## Numerical Stability
 
@@ -263,6 +264,7 @@ The implementation uses:
 \- lbeta() function for stable Beta function computations
 
 
+##
 
 ## Limitations
 
@@ -275,6 +277,7 @@ The implementation uses:
 \- Jeffreys prior used for objectivity but may not reflect biological knowledge
 
 
+## 
 
 ## Future work
 
@@ -287,6 +290,7 @@ The implementation uses:
 \- Visualize posterior predictive distributions
 
 
+## 
 
 ## License
 
@@ -297,6 +301,7 @@ This project is for educational purposes as part of coursework at the National a
 
 
 
+## 
 
 ## References
 
