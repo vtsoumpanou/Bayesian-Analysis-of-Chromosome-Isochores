@@ -440,7 +440,7 @@ This project is for educational purposes as part of coursework at the National a
 
 Vasiliki Tsoumpanou
 Email: vasiliki.tsoumpanou@gmail.com  
-GitHub: [your-username](https://github.com/your-username)
+GitHub: [[your-username](https://github.com/your-username)](https://github.com/vtsoumpanou)
 
 
 
