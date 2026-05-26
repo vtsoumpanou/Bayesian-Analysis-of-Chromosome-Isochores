@@ -87,9 +87,9 @@ where:
   - $p_1, p_2 \sim \text{Beta}(0.5, 0.5)$ (Jeffreys prior)
   - $t \sim \text{Discrete Uniform}(1, 99)$
 - Sampling scheme:
-  1. Sample $p_1$ from Beta full conditional
-  2. Sample $p_2$ from Beta full conditional
-  3. Sample $t$ using normalized posterior probabilities (log-scale for stability)
+  1\. Sample $p_1$ from Beta full conditional
+  2\. Sample $p_2$ from Beta full conditional
+  3\. Sample $t$ using normalized posterior probabilities (log-scale for stability)
 
 ## Requirements
 
