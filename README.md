@@ -113,15 +113,15 @@ Base R only (no additional packages required for these scripts). The following b
 ### Joint Posterior (up to constant)
 
 $$
-p(p_1, p_2, t \mid \mathbf{x}) \propto \text{Beta}(p_1 \mid a_1 + S_t, \, b_1 + n t - S_t) \times \text{Beta}(p_2 \mid a_2 + (S - S_t), \, b_2 + n (l - t) - (S - S_t)) \times \mathbb{I}(t \in \{1, \dots, l-1\})
+p(p_1, p_2, t \mid \mathbf{x}) \propto \text{Beta}(p_1 \mid a_1 + S_t,  b_1 + n t - S_t) \times \text{Beta}(p_2 \mid a_2 + (S - S_t),  b_2 + n (l - t) - (S - S_t)) \times \mathbb{I}(t \in \{1, \dots, l-1\})
 $$
 
 ### Conditional Posteriors
 
 $$
 \begin{aligned}
-p_1 \mid \mathbf{x}, t &\sim \text{Beta}(a_1 + S_t, \, b_1 + n t - S_t) \\
-p_2 \mid \mathbf{x}, t &\sim \text{Beta}(a_2 + (S - S_t), \, b_2 + n (l - t) - (S - S_t)) \\
+p_1 \mid \mathbf{x}, t &\sim \text{Beta}(a_1 + S_t,  b_1 + n t - S_t) \\
+p_2 \mid \mathbf{x}, t &\sim \text{Beta}(a_2 + (S - S_t),  b_2 + n (l - t) - (S - S_t)) \\
 P(t \mid p_1, p_2, \mathbf{x}) &\propto \left(\frac{p_1}{1-p_1}\right)^{S_t} \times \left(\frac{p_2}{1-p_2}\right)^{S_{t}^{\prime}}
 \end{aligned}
 $$
